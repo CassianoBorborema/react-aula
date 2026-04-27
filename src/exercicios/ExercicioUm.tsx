@@ -6,7 +6,6 @@ const MAXIMO = 10;
 function ExercicioUm() {
   const [contador, setContador] = useState(0);
 
-  // Ajustado para usar chaves {} em vez de parênteses ()
   const incrementar = () => {
     if (contador < MAXIMO) {
       setContador(contador + 1);
@@ -23,7 +22,6 @@ function ExercicioUm() {
     setContador(0);
   };
 
-  // Lógica de mensagem simplificada
   let mensagemLimite = "Faixa normal";
   if (contador === MINIMO) mensagemLimite = "Mínimo atingido";
   if (contador === MAXIMO) mensagemLimite = "Máximo atingido";
